@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 23</title>
+  </head>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    /* Main content */
+    .main-content {
+      padding: 20px 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    /* Media Queries for responsive design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 10px;
+      }
+
+      .navbar ul {
+        display: none;
+      }
+
+      .navbar ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .navbar ul li:last-child {
+        margin-bottom: 0;
+      }
+
+      .navbar ul li a {
+        display: block;
+        padding: 10px 0;
+      }
+
+      .navbar .menu-icon {
+        display: block;
+      }
+    }
+    h1,
+    p,
+    h2 {
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>My Website</h1>
+      </header>
+
+      <nav class="navbar">
+        <div class="menu-icon">&#9776;</div>
+        <!-- Menu icon for small screens -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-content">
+        <h2>Welcome to our website</h2>
+        <p>This is a sample text for the main content area.</p>
+      </div>
+      <h1>Hello World!</h1>
+      <p>
+        Programming in C offers a powerful blend of efficiency, portability, and
+        control. Developed in the 1970s, C is renowned for its ability to create
+        high-performance software, especially in system programming and embedded
+        systems. Its key features include procedural programming, static typing,
+        pointer manipulation, and a rich standard library. Despite its
+        efficiency, C requires careful memory management and lacks modern safety
+        features, making it more error-prone. Nonetheless, its widespread
+        adoption and active community make it an essential language for various
+        domains, from operating systems to applications and games.
+      </p>
+      <img
+        src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Programming"
+        width="600"
+        height="400"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1541728472741-03e45a58cf88?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="exploitation tools"
+        width="600"
+        height="400"
+      />
+      <footer class="footer">
+        <p>&copy; 2024 My Website.Tanishq Shivasharan.</p>
+      </footer>
+    </div>
+  </body>
+</html>
