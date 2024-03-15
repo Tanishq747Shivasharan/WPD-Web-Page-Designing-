@@ -3,6 +3,20 @@
   margin: 0%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.hero {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center items */
+}
+
+.logo,img {
+  padding: 30px;
+  margin-right: 10px; /* Adjust spacing between logo and brand name */
+  border-radius: 100px;
+}
+
+.brand-name h1 {
+  margin: 0; /* Remove default margin for h1 */
+}
 body {
   color: white;
   background-color: black;
@@ -60,9 +74,7 @@ nav ul li a:hover {
   color: white;
   font-weight: bold;
 }
-img {
-  padding-top: 50px;
-}
+
 h2 {
   padding: 30px;
   font-family: "Courier New", Courier, monospace;
@@ -73,4 +85,41 @@ p {
 .ourvalues {
   padding: 30px;
   font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer
+{
+  text-decoration: none;
+  color: white;
+  background-color: salmon;
+}
+.social-media
+{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.social-media i
+{
+  display: inline-block;
+  margin-top: 10px;
+}
+.social-media li:last-child
+{
+  margin-right: 0;
+}
+.social-media i
+{
+  width: 30px;
+  height: 30px;
 }
