@@ -1,125 +1,357 @@
 * {
-  padding: 0%;
-  margin: 0%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.hero {
-  display: flex; /* Use flexbox */
-  align-items: center; /* Vertically center items */
-}
-
-.logo,img {
-  padding: 30px;
-  margin-right: 10px; /* Adjust spacing between logo and brand name */
-  border-radius: 100px;
-}
-
-.brand-name h1 {
-  margin: 0; /* Remove default margin for h1 */
-}
-body {
-  color: white;
-  background-color: black;
-}
-
-h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 50px;
-  padding-top: 3px;
-  padding-left: 30px;
-  padding-bottom: 5px;
-}
-
-nav {
-  text-align: center;
-  background-color: black;
-}
-
-nav ul {
-  text-align: center;
-  list-style-type: none;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-nav ul li {
-  padding-left: 180px;
-  text-align: center;
-  float: left;
-}
-
-nav ul li a {
-  display: block;
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background-color: black;
 }
 
-nav ul li a:hover {
-  color: black;
-  background-color: blanchedalmond;
+header {
+  text-align: center;
 }
-.sell {
+
+.offer {
   font-size: 25px;
-  padding-top: 7px;
+  padding: 7px;
   color: black;
   background-color: cyan;
   transition: all 0.5s ease;
 }
-.sell:hover {
-  transform: none;
+
+.offer:hover {
   background-color: orange;
   color: white;
   font-weight: bold;
 }
 
-h2 {
-  padding: 30px;
-  font-family: "Courier New", Courier, monospace;
-}
-p {
-  padding-left: 30px;
-}
-.ourvalues {
-  padding: 30px;
-  font-size: 30px;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-footer
-{
-  text-decoration: none;
-  color: white;
-  background-color: salmon;
+.logo {
+  img {
+    border-radius: 50%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+  }
 }
-.social-media
-{
-  list-style: none;
+
+.brand-name h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+}
+
+nav {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 10px;
 }
-.social-media i
-{
-  display: inline-block;
-  margin-top: 10px;
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
 }
-.social-media li:last-child
-{
-  margin-right: 0;
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
 }
-.social-media i
-{
-  width: 30px;
-  height: 30px;
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: black;
+  background-color: blanchedalmond;
 }
+
+main {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.products {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.proSA,
+.proHYL {
+  width: 48%;
+}
+
+.proSA {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;margin-bottom: 60px;
+}
+
+.SA-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.SA-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(0, 255, 255, 0.235);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proSA:hover .SA-body {
+  right: 0;
+}
+
+.SAtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.SA-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.SA-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proHYL {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.HYL-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.HYL-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(0, 255, 255, 0.235);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proHYL:hover .HYL-body {
+  right: 0;
+}
+
+.HYLtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.HYL-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.HYL-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proVC-10 {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.VC-10-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.VC-10-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(0, 255, 255, 0.235);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proVC-10:hover .VC-10-body {
+  right: 0;
+}
+
+.VC-10title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.VC-10-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.VC-10-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proOSK {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+}
+
+.OSK-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.OSK-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(128, 0, 128, 0.208);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proOSK:hover .OSK-body {
+  right: 0;
+}
+
+.OSKtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.OSK-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.OSK-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#info {
+  margin-bottom: 20px;
+}
+vvvvvvvvvvvvvvvvvv
