@@ -69,6 +69,7 @@ nav ul li {
 }
 
 nav ul li a {
+  font-size: 20px;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -87,7 +88,18 @@ main {
   text-align: justify;
 }
 
+.Beliefs {
+  display: flex;
+  img {
+    display: flex;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .products {
+  font-size: 50px;
   padding: 30px;
   display: flex;
   justify-content: space-evenly;
@@ -105,7 +117,8 @@ main {
   border-radius: 20px;
   overflow: hidden;
   border: 8px solid #fff;
-  position: relative;margin-bottom: 60px;
+  position: relative;
+  margin-bottom: 60px;
 }
 
 .SA-img {
@@ -158,6 +171,12 @@ main {
   outline: none;
   font-weight: 500;
   cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.SA-btn:hover {
+  color: #fff;
+  background-color: black;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -222,6 +241,12 @@ main {
   outline: none;
   font-weight: 500;
   cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.HYL-btn:hover {
+  color: #fff;
+  background-color: black;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -286,6 +311,12 @@ main {
   outline: none;
   font-weight: 500;
   cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.VC-10-btn:hover {
+  color: #fff;
+  background-color: black;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -297,6 +328,7 @@ main {
   overflow: hidden;
   border: 8px solid #fff;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .OSK-img {
@@ -349,9 +381,225 @@ main {
   outline: none;
   font-weight: 500;
   cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.OSK-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proAAK {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.AAK-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.AAK-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(123, 0, 255, 0.268);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proAAK:hover .AAK-body {
+  right: 0;
+}
+
+.AAKtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.AAK-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.AAK-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.AAK-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proDSK {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.DSK-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.DSK-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(123, 0, 255, 0.268);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proDSK:hover .DSK-body {
+  right: 0;
+}
+
+.DSKtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.DSK-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.DSK-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.DSK-btn:hover {
+  color: #fff;
+  background-color: black;
 }
 
 #info {
   margin-bottom: 20px;
 }
-vvvvvvvvvvvvvvvvvv
+
+footer {
+  background-color: gold;
+  color: black;
+}
+
+footer p {
+  font-size: 25px;
+}
+
+.social-media-heading {
+  text-align: center;
+}
+
+.social-media li i {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 30px;
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media li {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.Contact li {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.Contact-heading {
+  text-align: center;
+}
+
+.Contact li i {
+  color: black;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev li {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.dev li i {
+  color: black;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
