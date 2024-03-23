@@ -4,7 +4,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p {
-  line-height: 2.5; 
+  line-height: 2.5;  /*Looks good to see glitring space*/
 }
 header {
   text-align: center;
