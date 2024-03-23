@@ -3,6 +3,9 @@
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+p {
+  line-height: 2.5; /* Adjust the line-height value to control spacing between lines */
+}
 header {
   text-align: center;
 }
@@ -52,10 +55,20 @@ ul {
   padding-left: 320px;
   margin-bottom: 5%;
 }
-.consent
+.consent {
+  margin-top: 80px;
+  margin-right: 280px;
+  margin-left: 280px;
+  margin-bottom: 15px;
+}
+
+footer
 {
-    margin-top: 80px;
-    margin-right: 280px;
-    margin-left: 280px;
-    margin-bottom: 15px;
+  background-color: black;
+  color: white;
+}
+.foot-contain ul
+{
+  text-decoration: none;
+  color: white;
 }
