@@ -1,636 +1,646 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    width: 100%;
-    height: 100vh;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: white;
-    background-color: black;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  .offer {
-    font-size: 25px;
-    padding: 7px;
-    color: black;
-    background-color: cyan;
-    transition: all 0.5s ease;
-  }
-  
-  .offer:hover {
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .logo {
-    img {
-      border-radius: 50%;
-      padding: 10px;
-      width: 100px;
-      height: 100px;
-    }
-  }
-  
-  .brand-name h1 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 50px;
-  }
-  
-  nav {
-    text-align: center;
-    background-color: black;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-  }
-  
-  nav ul li a:hover,
-  nav ul li a.active {
-    color: black;
-    background-color: blanchedalmond;
-  }
-  
-  main {
-    padding: 0 20px;
-    text-align: justify;
-  }
-  
-  .Beliefs {
-    display: flex;
-    img {
-      display: flex;
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-    }
-  }
-  
-  .products {
-    font-size: 50px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .proSA,
-  .proHYL {
-    width: 48%;
-  }
-  
-  .proSA {
-    width: 320px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px solid #fff;
-    position: relative;
-    margin-bottom: 60px;
-  }
-  
-  .SA-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .SA-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: rgba(0, 255, 255, 0.235);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 2s ease;
-  }
-  
-  .proSA:hover .SA-body {
-    right: 0;
-  }
-  
-  .SAtitle {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  
-  .SA-shortnote {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
-  }
-  
-  .SA-btn {
-    color: black;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1.5s ease;
-  }
-  
-  .SA-btn:hover {
-    color: #fff;
-    background-color: black;
-  }
-  
-  /*------------------------------------------------------------------------------------------------------------------*/
-  
-  .proHYL {
-    width: 320px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px solid #fff;
-    position: relative;
-    margin-bottom: 60px;
-  }
-  
-  .HYL-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .HYL-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: rgba(0, 255, 255, 0.235);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 2s ease;
-  }
-  
-  .proHYL:hover .HYL-body {
-    right: 0;
-  }
-  
-  .HYLtitle {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  
-  .HYL-shortnote {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
-  }
-  
-  .HYL-btn {
-    color: black;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1.5s ease;
-  }
-  
-  .HYL-btn:hover {
-    color: #fff;
-    background-color: black;
-  }
-  
-  /*------------------------------------------------------------------------------------------------------------------*/
-  
-  .proVC-10 {
-    width: 320px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px solid #fff;
-    position: relative;
-    margin-bottom: 60px;
-  }
-  
-  .VC-10-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .VC-10-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: rgba(0, 255, 255, 0.235);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 2s ease;
-  }
-  
-  .proVC-10:hover .VC-10-body {
-    right: 0;
-  }
-  
-  .VC-10title {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  
-  .VC-10-shortnote {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
-  }
-  
-  .VC-10-btn {
-    color: black;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1.5s ease;
-  }
-  
-  .VC-10-btn:hover {
-    color: #fff;
-    background-color: black;
-  }
-  
-  /*------------------------------------------------------------------------------------------------------------------*/
-  
-  .proOSK {
-    width: 320px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px solid #fff;
-    position: relative;
-    margin-bottom: 60px;
-  }
-  
-  .OSK-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .OSK-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: rgba(128, 0, 128, 0.208);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 2s ease;
-  }
-  
-  .proOSK:hover .OSK-body {
-    right: 0;
-  }
-  
-  .OSKtitle {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  
-  .OSK-shortnote {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
-  }
-  
-  .OSK-btn {
-    color: black;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1.5s ease;
-  }
-  
-  .OSK-btn:hover {
-    color: #fff;
-    background-color: black;
-  }
-  
-  /*------------------------------------------------------------------------------------------------------------------*/
-  
-  .proAAK {
-    width: 320px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px solid #fff;
-    position: relative;
-    margin-bottom: 60px;
-  }
-  
-  .AAK-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .AAK-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: rgba(123, 0, 255, 0.268);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 2s ease;
-  }
-  
-  .proAAK:hover .AAK-body {
-    right: 0;
-  }
-  
-  .AAKtitle {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  
-  .AAK-shortnote {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
-  }
-  
-  .AAK-btn {
-    color: black;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1.5s ease;
-  }
-  
-  .AAK-btn:hover {
-    color: #fff;
-    background-color: black;
-  }
-  
-  /*------------------------------------------------------------------------------------------------------------------*/
-  
-  .proDSK {
-    width: 320px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px solid #fff;
-    position: relative;
-    margin-bottom: 60px;
-  }
-  
-  .DSK-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  .DSK-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: rgba(123, 0, 255, 0.268);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 2s ease;
-  }
-  
-  .proDSK:hover .DSK-body {
-    right: 0;
-  }
-  
-  .DSKtitle {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
-  }
-  
-  .DSK-shortnote {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
-  }
-  
-  .DSK-btn {
-    color: black;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1.5s ease;
-  }
-  
-  .DSK-btn:hover {
-    color: #fff;
-    background-color: black;
-  }
-  
-  #info {
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    background-color: gold;
-    color: black;
-  }
-
-.footer-container
-{
-    display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.footer-container ul
-{
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote {
+  line-height: 1.6; /* Adjust the value as needed */
+}
+
+.offer {
+  line-height: 1.2; /* Adjust the value as needed */
+}
+
+.quote blockquote {
+  line-height: 1.4; /* Adjust the value as needed */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+}
+
+.offer {
+  font-size: 25px;
+  padding: 7px;
+  color: black;
+  background-color: cyan;
+  transition: all 0.5s ease;
+}
+
+.offer:hover {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  img {
+    border-radius: 50%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.brand-name h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+}
+
+nav {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: black;
+  background-color: blanchedalmond;
+}
+
+main {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.Beliefs {
+  display: flex;
+  img {
     display: flex;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.products {
+  font-size: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.proSA,
+.proHYL {
+  width: 48%;
+}
+
+.proSA {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.SA-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.SA-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(0, 255, 255, 0.235);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proSA:hover .SA-body {
+  right: 0;
+}
+
+.SAtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.SA-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.SA-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.SA-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proHYL {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.HYL-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.HYL-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(0, 255, 255, 0.235);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proHYL:hover .HYL-body {
+  right: 0;
+}
+
+.HYLtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.HYL-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.HYL-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.HYL-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proVC-10 {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.VC-10-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.VC-10-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(0, 255, 255, 0.235);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proVC-10:hover .VC-10-body {
+  right: 0;
+}
+
+.VC-10title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.VC-10-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.VC-10-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.VC-10-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proOSK {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.OSK-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.OSK-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(128, 0, 128, 0.208);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proOSK:hover .OSK-body {
+  right: 0;
+}
+
+.OSKtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.OSK-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.OSK-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.OSK-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proAAK {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.AAK-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.AAK-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(123, 0, 255, 0.268);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proAAK:hover .AAK-body {
+  right: 0;
+}
+
+.AAKtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.AAK-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.AAK-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.AAK-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.proDSK {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.DSK-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.DSK-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(123, 0, 255, 0.268);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 2s ease;
+}
+
+.proDSK:hover .DSK-body {
+  right: 0;
+}
+
+.DSKtitle {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.DSK-shortnote {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.DSK-btn {
+  color: black;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1.5s ease;
+}
+
+.DSK-btn:hover {
+  color: #fff;
+  background-color: black;
+}
+
+#info {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: gold;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+}
+.footer-container ul {
+  display: flex;
   align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 .footer-container ul li {
-    margin: 0 10px;
-  }
-
-.confidential
-{
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
+  margin: 0 10px;
 }
-  
-  footer p {
-    font-size: 25px;
-  }
-  
-  .social-media-heading {
-    text-align: center;
-  }
 
-  
-  .social-media li i {
-    color: black;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 30px;
-    justify-content: center;
-  }
-  
-  .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .social-media li {
-    padding-bottom: 20px;
-    font-size: 50px;
-  }
-  
-  .Contact li {
-    padding-bottom: 20px;
-    font-size: 50px;
-  }
-  
-  .Contact-heading {
-    text-align: center;
-  }
-  
-  .Contact li i {
-    color: black;
-  }
-  
-  .Contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .dev li {
-    padding-bottom: 20px;
-    font-size: 50px;
-  }
-  
-  .dev li i {
-    color: black;
-  }
-  
-  .dev {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-.brands
-{
-    img
-    {
-        color: #fff;
-    }
+.confidential {
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 25px;
+}
+
+.social-media-heading {
+  text-align: center;
+}
+
+.social-media li i {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 30px;
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media li {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.Contact li {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.Contact-heading {
+  text-align: center;
+}
+
+.Contact li i {
+  color: black;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev li {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.dev li i {
+  color: black;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about li a {
+  color: black;
+  text-decoration: none;
+  transition: all 1.5 ease;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
 }
