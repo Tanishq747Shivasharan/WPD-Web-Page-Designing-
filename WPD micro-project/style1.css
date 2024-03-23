@@ -1,40 +1,61 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
-    text-align: center;
+  text-align: center;
+}
+.logo {
+  img {
+    border: 5px solid gold;
+    border-radius: 50%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
   }
-  .logo {
-    img {
-        border: 5px solid gold;
-      border-radius: 50%;
-      padding: 10px;
-      width: 100px;
-      height: 100px;
-    }
-  }
-  .hero
-  {
-    background-color: black;
-    color: aliceblue;
-  }
-  .offer {
-    font-size: 25px;
-    padding: 7px;
-    color: black;
-    background-color: cyan;
-    transition: all 0.5s ease;
-  }
-  
-  .offer:hover {
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-  }
-.Privacy-Policy
+}
+.hero {
+  background-color: black;
+  color: aliceblue;
+}
+.offer {
+  font-size: 25px;
+  padding: 7px;
+  color: black;
+  background-color: cyan;
+  transition: all 0.5s ease;
+}
+
+.offer:hover {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+.Privacy-Policy {
+  padding: 50px;
+}
+.Note {
+  margin-top: 80px;
+  margin-right: 280px;
+  margin-left: 280px;
+  margin-bottom: 15px;
+}
+.note1 {
+  margin-top: 80px;
+  margin-right: 280px;
+  margin-left: 280px;
+  margin-bottom: 15px;
+}
+ul {
+  padding-top: 34px;
+  padding-left: 320px;
+  margin-bottom: 5%;
+}
+.consent
 {
-    padding: 20%;
+    margin-top: 80px;
+    margin-right: 280px;
+    margin-left: 280px;
+    margin-bottom: 15px;
 }
